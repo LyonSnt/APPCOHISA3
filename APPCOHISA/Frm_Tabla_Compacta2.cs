@@ -19,7 +19,7 @@ namespace APPCOHISA
         public string ARCHIVO2 = "";
 
         //METODO PARA CARGAR EL ARCHIVO DE LA COMPUTADORA
-        public void cargarArchivo()
+        public void CargarArchivo()
         {
             try
             {
@@ -27,8 +27,8 @@ namespace APPCOHISA
 
                 //if (!string.IsNullOrEmpty(this.openFileDialog1.FileName))
                 //{
-                    ARCHIVO = @"E:\c#\APPCOHISA\APPCOHISA\Archivos\tablacompacta.csv";
-                ARCHIVO2 = @"E:\c#\APPCOHISA\APPCOHISA\Archivos\Matriz.csv";
+                    ARCHIVO = @"E:\c#\RECUPERADO\APPCOHISA3\APPCOHISA\APPCOHISA\Archivos\tablacompacta.csv";
+                ARCHIVO2 = @"E:\c#\RECUPERADO\APPCOHISA3\APPCOHISA\APPCOHISA\Archivos\Matriz.csv";
                 l.lecturaArchivo(tabla1, ';', ARCHIVO);//EL PUNTO Y COMA ES PARA SEPARAR DEL ARCHIVO CSV
                 l.lecturaArchivo(tabla2, ';', ARCHIVO2);
                 //}
@@ -53,7 +53,7 @@ namespace APPCOHISA
 
         private void Frm_Tabla_Compacta2_Load(object sender, EventArgs e)
         {
-            cargarArchivo();
+            CargarArchivo();
         }
     }
 }

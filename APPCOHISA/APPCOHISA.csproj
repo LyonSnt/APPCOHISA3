@@ -103,6 +103,12 @@
     <Compile Include="Frm_Tabla_Compacta.Designer.cs">
       <DependentUpon>Frm_Tabla_Compacta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Tabla_Compacta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Tabla_Compacta2.Designer.cs">
+      <DependentUpon>Frm_Tabla_Compacta2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Tabla_Simbolos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Tabla_Compacta.resx">
       <DependentUpon>Frm_Tabla_Compacta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Tabla_Compacta2.resx">
+      <DependentUpon>Frm_Tabla_Compacta2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Tabla_Simbolos.resx">
       <DependentUpon>Frm_Tabla_Simbolos.cs</DependentUpon>

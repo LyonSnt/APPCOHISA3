@@ -167,7 +167,7 @@ namespace APPCOHISA
 
         private void button8_Click(object sender, EventArgs e)
         {
-            openChildForm(new Frm_Token_Reconocidos());
+            openChildForm(new Frm_Tabla_Compacta2());
             hideSubMenu();
         }
     }
