@@ -1,0 +1,46 @@
+Numero de Token;Sinónimo;Nombre Token;Lexema
+1;i;identificador;#letra (letra|digito|_)*
+2;+;operadorsuma;+
+3;-;operadoresta;-
+4;*;operadormultiplicacion;yuy *
+5;/;operadordivision;/
+6;^;operadorpotencia;^
+7;&;operadorand;&&
+8;|;operadoror;||
+9;<;menorque;<
+10;>;mayorque;>
+11;=;igualque;=
+12;%;menorigualque;<=
+13;$;mayorigual;=>
+14;#;diferenteque;<>
+15;v;verdadero;true
+16;f;falso;false
+17;e;entero;integer
+18;r;real;real
+19;l;lógico;bool
+20;c;carácter;char
+21;d;cadena;string
+22;p;programa;main
+23;{;comienzobloque;{
+24;};finbloque;}
+25;:;operasigna;:=
+26;q;si;if
+27;x;mientras;while
+28;y;bucle;do
+29;g;repetir;for
+30;h;incremento;increment
+31;j;leer;get
+32;k;escribir;print
+33;m;continuar;continue
+34;,;coma;,
+35;(;parentesisizq;(
+36;);parentesisder;)
+37;!;puntoycoma;!
+38;ñ;hasta;until
+39;?;dospuntos;:
+40;¡;declarar;declare
+41;];romper;break
+42;a;literalreal;(+|-)digito+.digito+|digito+digito+
+43;a;literalentero;digito+
+44;a;literalcadena;"(letra|digito|simbolos)+"
+45;a;literalchar;'letra|digito|simbolos'
