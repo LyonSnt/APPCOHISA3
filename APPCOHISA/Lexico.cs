@@ -59,7 +59,7 @@ namespace APPCOHISA
             listaTokens.Add(nuevo);
         }
 
-        public void AddError(int numeroToken, string sinonimo, string nombreToken, string lexema, int linea, int columna)
+        public void AddError(int numeroToken, string sinonimo, string nombreToken, string lexema, string v, int linea, int columna)
         {
             Error errtok = new Error(numeroToken, sinonimo, nombreToken, lexema, linea, columna);
             listaErrores.Add(errtok);
@@ -405,10 +405,7 @@ namespace APPCOHISA
 
         }
 
-        private void AddError(int numeroToken, string sinonimo, string nombreToken, string lexema, string v, int fila, int columna)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public bool Macht_enReser(string sente)
         {

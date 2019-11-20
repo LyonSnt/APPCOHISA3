@@ -49,7 +49,7 @@ namespace APPCOHISA
             for (int i = 0; i < lis_toks.Count; i++)
             {
                 Token actual = lis_toks.ElementAt(i);
-                MessageBox.Show("[Lexema:" + actual.getLexema() + ",IdToken: " + actual.getNumeroToken() + ",Linea: " + actual.getLinea() + "]", "des");
+                MessageBox.Show("[Lexema:" + actual.getLexema() + ",IdToken: " + actual.getNumeroToken() + ",Linea: " + actual.getLinea() + "]", "Token Reconocidos");
             }
 
 
@@ -120,7 +120,7 @@ namespace APPCOHISA
         private void guardarComo()
         {
             SaveFileDialog saveFile = new SaveFileDialog();
-            saveFile.Filter = "[LFP]|*.txt";
+            saveFile.Filter = "[UTN]|*.utn";
             saveFile.Title = "Guardar archivo";
 
             if (saveFile.ShowDialog() == DialogResult.OK)
@@ -147,7 +147,7 @@ namespace APPCOHISA
         {
 
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "[LFP]|*.txt";
+            openFile.Filter = "[UTN]|*.utn";
             string texto = "";
             string fila = "";
             if (openFile.ShowDialog() == DialogResult.OK)

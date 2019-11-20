@@ -109,8 +109,7 @@ namespace APPCOHISA
 
         private void btnMenuTC_Click(object sender, EventArgs e)
         {
-            ///edito Edisonnnnn
-           // openChildForm(new TablaCompacta());
+            openChildForm(new Frm_Tabla_Compacta2());
             hideSubMenu();
         }
 
@@ -128,8 +127,10 @@ namespace APPCOHISA
 
         private void btnSubTokenReconocido_Click(object sender, EventArgs e)
         {
-            openChildForm(new Frm_Token_Reconocidos());
+            openChildForm(new Form1 ());
             hideSubMenu();
+            /*openChildForm(new Frm_Token_Reconocidos());
+            hideSubMenu();*/
         }
 
         private void btnSubTDS_Click(object sender, EventArgs e)
@@ -167,8 +168,7 @@ namespace APPCOHISA
 
         private void button8_Click(object sender, EventArgs e)
         {
-            openChildForm(new Frm_Tabla_Compacta2());
-            hideSubMenu();
+            
         }
     }
 }
