@@ -9,10 +9,10 @@ namespace APPCOHISA
     class Rutas
     {
 
-        private readonly string path;
-        private readonly string Nombre;
+        private string path;
+        private String Nombre;
 
-        public Rutas(string path, string Nombre)
+        public Rutas(string path, String Nombre)
         {
 
             this.path = path;
@@ -20,11 +20,11 @@ namespace APPCOHISA
         }
         public string getPath()
         {
-            return path;
+            return this.path;
         }
-        public string getNombre()
+        public String getNombre()
         {
-            return Nombre;
+            return this.Nombre;
         }
       
     }

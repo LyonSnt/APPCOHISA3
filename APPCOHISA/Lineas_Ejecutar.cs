@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace APPCOHISA
 {
-
+ 
     public class Lineas_Ejecutar
     {
-        readonly string Token_nombre;
-        readonly long numeroToken;
-        readonly object lin_senten;
-        readonly string cadena_oper;
+        String Token_nombre;
+        long numeroToken;
+        Object lin_senten;
+        String cadena_oper;
 
-        public Lineas_Ejecutar(long numeroToken, string Token_nombre, object lin_senten, string cadena_oper)
+        public Lineas_Ejecutar(long numeroToken, String Token_nombre, Object lin_senten, String cadena_oper )
         {
 
             this.Token_nombre = Token_nombre;
@@ -24,25 +24,25 @@ namespace APPCOHISA
 
         }
 
-        public string getCadena_oper()
+        public String getCadena_oper()
         {
-            return cadena_oper;
+            return this.cadena_oper;
         }
 
-        public string getToken_nombre()
+        public String getToken_nombre()
         {
-            return Token_nombre;
+            return this.Token_nombre;
         }
         public long getNumeroToken()
         {
-            return numeroToken;
+            return this.numeroToken;
         }
-        public object getlin_senten()
+        public Object getlin_senten()
         {
-            return lin_senten;
+            return this.lin_senten;
         }
 
-
+  
     }
 
 

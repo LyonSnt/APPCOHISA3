@@ -9,13 +9,13 @@ namespace APPCOHISA
     class Token
     {
         public int numeroToken;
-        public String sinonimo;
-        public String nombreToken;
-        public String lexema;
+        public string sinonimo;
+        public string nombreToken;
+        public string lexema;
         public int linea;
         public int columna;
 
-        public Token(int numeroToken, String sinonimo, String nombreToken, String lexema, int linea, int columna)
+        public Token(int numeroToken, string sinonimo, string nombreToken, string lexema, int linea, int columna)
         {
             this.numeroToken = numeroToken;
             this.sinonimo = sinonimo;
@@ -28,15 +28,15 @@ namespace APPCOHISA
         {
             return this.numeroToken;
         }
-        public String getSinonimo()
+        public string getSinonimo()
         {
             return this.sinonimo;
         }
-        public String getNombreToken()
+        public string getNombreToken()
         {
             return this.nombreToken;
         }
-        public String getLexema()
+        public string getLexema()
         {
             return this.lexema;
         }

@@ -9,10 +9,10 @@ namespace APPCOHISA
  
     public class Graficas_Ejecutar
     {
-        private String nombreToke;
-        private long numeroToken;
-        private Object lin_senten;
-        private String cadena_oper;
+        String nombreToke;
+        long numeroToken;
+        Object lin_senten;
+        String cadena_oper;
 
         public Graficas_Ejecutar(long numeroToken, String nombreToke, Object lin_senten, String cadena_oper )
         {
