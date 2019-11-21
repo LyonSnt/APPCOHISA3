@@ -104,7 +104,7 @@ namespace APPCOHISA
 
         private void Login_Load(object sender, EventArgs e)
         {
-            //HOLAAA
+            //CAMBIO NADA
         }
     }
 }
