@@ -208,7 +208,9 @@
       <DependentUpon>Frm_Verificacion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Archivos\Matriz.csv" />
+    <None Include="Archivos\PRIFIL.csv" />
     <None Include="Archivos\tablacompacta.csv" />
+    <None Include="Archivos\VALOR.csv" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
