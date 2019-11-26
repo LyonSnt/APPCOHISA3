@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 
@@ -12,12 +13,52 @@ namespace APPCOHISA
         Leer l = new Leer();
         //Alamcena la ruta del archivo .txt
         public string ARCHIVO = "";
+        static private List<Rutas> rutas;
+        public String Path_actual;
+        public String nombre_acual;
+        Frm_Movimientos movimiento = new Frm_Movimientos();
+        public void CargarMovimiento()
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "[UTN]|*.utn";
+            string texto = "";
+            string fila = "";
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                string ruta1 = openFile.FileName;
+                StreamReader streamReader = new StreamReader(ruta1, System.Text.Encoding.UTF8);
+                string nombreC = Path.GetFileNameWithoutExtension(openFile.FileName);
+                while ((fila = streamReader.ReadLine()) != null)
+                {
+                    texto += fila + System.Environment.NewLine;
+                }
+
+                //  Frm_Movimientos mo = new Frm_Movimientos();
+                movimiento.richTextBox1.Text = texto;
+
+
+                streamReader.Close();
+                //MessageBox.Show(nombreC, "nombreC");
+                //MessageBox.Show(ruta1, "ruta1");
+
+                rutas.Clear();
+                Rutas path = new Rutas(ruta1, nombreC);
+                rutas.Add(path);
+
+                //MessageBox.Show(rutas.Count.ToString() , "rutas.Count");
+                Path_actual = ruta1;
+                nombre_acual = nombreC;
+                this.Text = nombre_acual;
+
+            }
+        }
 
       
         public Frm_Menu()
         {
             InitializeComponent();
             hideSubMenu();
+            rutas = new List<Rutas>();
         }
 
         public void hideSubMenu()
@@ -120,7 +161,8 @@ namespace APPCOHISA
 
         private void BtnSubMovimiento_Click(object sender, EventArgs e)
         {
-            //edismmnznxgxgxg
+           // CargarMovimiento();
+           // movimiento.Show();
             openChildForm(new Frm_Movimientos());
             hideSubMenu();
         }
